@@ -1,0 +1,13 @@
+C:\Users\Néstor\Desktop\ServidorRest\WepAppiConMetodos\bin\WepAppiConMetodos.dll
+C:\Users\Néstor\Desktop\ServidorRest\WepAppiConMetodos\bin\WepAppiConMetodos.pdb
+C:\Users\Néstor\Desktop\ServidorRest\WepAppiConMetodos\bin\Newtonsoft.Json.dll
+C:\Users\Néstor\Desktop\ServidorRest\WepAppiConMetodos\bin\System.Net.Http.Formatting.dll
+C:\Users\Néstor\Desktop\ServidorRest\WepAppiConMetodos\bin\System.Web.Http.dll
+C:\Users\Néstor\Desktop\ServidorRest\WepAppiConMetodos\bin\System.Web.Http.WebHost.dll
+C:\Users\Néstor\Desktop\ServidorRest\WepAppiConMetodos\bin\Newtonsoft.Json.xml
+C:\Users\Néstor\Desktop\ServidorRest\WepAppiConMetodos\bin\System.Net.Http.Formatting.xml
+C:\Users\Néstor\Desktop\ServidorRest\WepAppiConMetodos\bin\System.Web.Http.xml
+C:\Users\Néstor\Desktop\ServidorRest\WepAppiConMetodos\bin\System.Web.Http.WebHost.xml
+C:\Users\Néstor\Desktop\ServidorRest\WepAppiConMetodos\obj\Debug\ServidorRest.csprojResolveAssemblyReference.cache
+C:\Users\Néstor\Desktop\ServidorRest\WepAppiConMetodos\obj\Debug\WepAppiConMetodos.dll
+C:\Users\Néstor\Desktop\ServidorRest\WepAppiConMetodos\obj\Debug\WepAppiConMetodos.pdb

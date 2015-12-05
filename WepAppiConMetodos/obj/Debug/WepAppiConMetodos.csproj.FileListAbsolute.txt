@@ -1,0 +1,14 @@
+C:\Users\GBONILLA\Desktop\WepAppiConMetodos\WepAppiConMetodos\bin\WepAppiConMetodos.dll.config
+C:\Users\GBONILLA\Desktop\WepAppiConMetodos\WepAppiConMetodos\bin\WepAppiConMetodos.dll
+C:\Users\GBONILLA\Desktop\WepAppiConMetodos\WepAppiConMetodos\bin\WepAppiConMetodos.pdb
+C:\Users\GBONILLA\Desktop\WepAppiConMetodos\WepAppiConMetodos\bin\Newtonsoft.Json.dll
+C:\Users\GBONILLA\Desktop\WepAppiConMetodos\WepAppiConMetodos\bin\System.Net.Http.Formatting.dll
+C:\Users\GBONILLA\Desktop\WepAppiConMetodos\WepAppiConMetodos\bin\System.Web.Http.dll
+C:\Users\GBONILLA\Desktop\WepAppiConMetodos\WepAppiConMetodos\bin\System.Web.Http.WebHost.dll
+C:\Users\GBONILLA\Desktop\WepAppiConMetodos\WepAppiConMetodos\bin\Newtonsoft.Json.xml
+C:\Users\GBONILLA\Desktop\WepAppiConMetodos\WepAppiConMetodos\bin\System.Net.Http.Formatting.xml
+C:\Users\GBONILLA\Desktop\WepAppiConMetodos\WepAppiConMetodos\bin\System.Web.Http.xml
+C:\Users\GBONILLA\Desktop\WepAppiConMetodos\WepAppiConMetodos\bin\System.Web.Http.WebHost.xml
+C:\Users\GBONILLA\Desktop\WepAppiConMetodos\WepAppiConMetodos\obj\Debug\WepAppiConMetodos.csprojResolveAssemblyReference.cache
+C:\Users\GBONILLA\Desktop\WepAppiConMetodos\WepAppiConMetodos\obj\Debug\WepAppiConMetodos.dll
+C:\Users\GBONILLA\Desktop\WepAppiConMetodos\WepAppiConMetodos\obj\Debug\WepAppiConMetodos.pdb

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="iniciarSesion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="iniciarSesionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iniciarSesionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCategorias">
+        <s:complexType />
+      </s:element>
+      <s:element name="ObtenerCategoriasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerCategoriasResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CrearDenunciaPorFoto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="lat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="longi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombreCat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="imgb64" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearDenunciaPorFotoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CrearDenunciaPorFotoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="iniciarSesionSoapIn">
+    <wsdl:part name="parameters" element="tns:iniciarSesion" />
+  </wsdl:message>
+  <wsdl:message name="iniciarSesionSoapOut">
+    <wsdl:part name="parameters" element="tns:iniciarSesionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCategoriasSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerCategorias" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCategoriasSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerCategoriasResponse" />
+  </wsdl:message>
+  <wsdl:message name="CrearDenunciaPorFotoSoapIn">
+    <wsdl:part name="parameters" element="tns:CrearDenunciaPorFoto" />
+  </wsdl:message>
+  <wsdl:message name="CrearDenunciaPorFotoSoapOut">
+    <wsdl:part name="parameters" element="tns:CrearDenunciaPorFotoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiciosMovilSoap">
+    <wsdl:operation name="iniciarSesion">
+      <wsdl:input message="tns:iniciarSesionSoapIn" />
+      <wsdl:output message="tns:iniciarSesionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCategorias">
+      <wsdl:input message="tns:ObtenerCategoriasSoapIn" />
+      <wsdl:output message="tns:ObtenerCategoriasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearDenunciaPorFoto">
+      <wsdl:input message="tns:CrearDenunciaPorFotoSoapIn" />
+      <wsdl:output message="tns:CrearDenunciaPorFotoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiciosMovilSoap" type="tns:ServiciosMovilSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="iniciarSesion">
+      <soap:operation soapAction="http://tempuri.org/iniciarSesion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCategorias">
+      <soap:operation soapAction="http://tempuri.org/ObtenerCategorias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearDenunciaPorFoto">
+      <soap:operation soapAction="http://tempuri.org/CrearDenunciaPorFoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiciosMovilSoap12" type="tns:ServiciosMovilSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="iniciarSesion">
+      <soap12:operation soapAction="http://tempuri.org/iniciarSesion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCategorias">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerCategorias" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearDenunciaPorFoto">
+      <soap12:operation soapAction="http://tempuri.org/CrearDenunciaPorFoto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiciosMovil">
+    <wsdl:port name="ServiciosMovilSoap" binding="tns:ServiciosMovilSoap">
+      <soap:address location="http://www.ciudadcontradelincuencia.somee.com/ServiciosMovil.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiciosMovilSoap12" binding="tns:ServiciosMovilSoap12">
+      <soap12:address location="http://www.ciudadcontradelincuencia.somee.com/ServiciosMovil.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
